@@ -1,0 +1,99 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Start page example
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Section</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Subsection</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Check your project is eligible?
+      </h1>
+
+
+      <p>Eligible projects are those which seek to save a community asset or amenity which is currently at risk of being lost. 
+
+        You must be able to demonstrate that:
+        
+        the asset or amenity is at risk 
+        this might be from closure, sale, neglect or unsustainable operations due to its business model
+         
+        there is a realistic chance that the asset or amenity could be sold or transferred into community ownership within 6 months of the application deadline
+         
+        the community asset or amenity has a demonstrable community use and value which furthers the social wellbeing and social interests of the community
+        if the community asset is currently derelict it must have had a community use within the last 5 years
+         
+        you can show how you can ‘match’ the capital grant from the Community Ownership Fund with other funding sources including
+        for example, other loans, grants or community shares
+         
+        you will have full capital funding in place within 6 months of the application deadline 
+        </p>
+
+        <P>What is match funding?</P>
+        
+        <p>The Community Ownership Fund will contribute up to 50% of the total capital required.  
+            
+            Up to £250,000 match-funded capital will be available for most asset types. Exceptionally bidders will be able to make the case for up to £1 million match-funding to help establish a community-owned sports club or help buy a sports club or ground at risk of being lost without community intervention.
+        </P>
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Subsection
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="#">
+                Related link
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Related link
+              </a>
+            </li>
+            <li>
+              <a href="#" class="govuk-!-font-weight-bold">
+                More <span class="govuk-visually-hidden">in Subsection</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <p>If you’re having problems accessing the form or need help digitally then please ring our service desk using the following number 0203 829 0743.
+
+        The service desk is open from 9am to 5pm Monday to Friday (excluding Bank Holidays).
+        
+        If you have any questions with regards to the application form or need any help understanding the policy please email us at COF@communities.gov.uk</p>
+
+    </div>
+  </div>
+{% endblock %}

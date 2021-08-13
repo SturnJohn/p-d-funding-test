@@ -1,0 +1,108 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Start page example
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Section</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Subsection</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Additional documents
+      </h1>
+
+
+      <p>You will also be required to send us essential information with your application form.
+
+        You will send these documents once you've completed this form.
+        
+        All applicants must send the following documents:
+        
+        your governing documents or articles of association 
+        
+        your financial accounts and/or management accounts. If you are a newly formed organisation you will need to provide projected income and expenditure from the 12 months from when your organisation was established, as part of your management case
+        
+        proof the asset is at risk and options for sale/transfer – see above
+        
+        full business plan
+        If a transfer or sale is already agreed, you will need to provide:
+        
+        all legal documents (including freehold and leasehold contracts or heads of terms) 
+        If your asset is publicly owned, you will need to provide:
+        
+        a supporting statement from the public owner 
+        
+        
+        If available, these documents should also be added to your application:
+        
+        an independent valuation of the asset in the last 6 months (if you don’t currently have this, it will need to be provided before we award capital funding)
+        
+        a structural survey and feasibility studies (if you don’t currently have this, funding may be provided to pay for these as part of your capital grant)
+        additional evidence on plans, agreement in principle or secured matched funding – optional to provide at this stage though all sources of matched funding identified in your Business Plan will need to be verified prior to capital draw-down
+        
+        
+        Your application will be considered incomplete without the required documents. Please factor in the time it will take you to send these documents to ensure you can submit your application on time.
+        
+        </p>
+
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Subsection
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="#">
+                Related link
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Related link
+              </a>
+            </li>
+            <li>
+              <a href="#" class="govuk-!-font-weight-bold">
+                More <span class="govuk-visually-hidden">in Subsection</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <p>If you’re having problems accessing the form or need help digitally then please ring our service desk using the following number 0203 829 0743.
+
+        The service desk is open from 9am to 5pm Monday to Friday (excluding Bank Holidays).
+        
+        If you have any questions with regards to the application form or need any help understanding the policy please email us at COF@communities.gov.uk</p>
+
+    </div>
+  </div>
+{% endblock %}
